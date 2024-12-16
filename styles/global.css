@@ -1,40 +1,52 @@
-:root{
-    /* tipografia */
-    --family-font-1: "Leckerli One", cursive;
-    --logo: 400 40px var(--family-font-1);
-    --family-font-2: "Baloo 2", sans-serif;
-    --heading-md: 800 28px var(--family-font-2);
-    --heading-sm: 800 18px var(--family-font-2);
-    --family-font-3: "Open Sans", sans-serif;
-    --body-md: 600 16px var(--family-font-3);
-    --body-sm: 600 14px var(--family-font-3);
-    --body-xs: 600 12px var(--family-font-3);
-    /* cores */
-    --brand-light: #59B2FF;
-    --brand-mid: #3487CF;
-    --brand-dark: #1D6FB6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* tipografia */
+  --family-font-1: "Leckerli One", cursive;
+  --logo: 400 40px var(--family-font-1);
+  --family-font-2: "Baloo 2", sans-serif;
+  --heading-md: 800 28px var(--family-font-2);
+  --heading-sm: 800 18px var(--family-font-2);
+  --family-font-3: "Open Sans", sans-serif;
+  --body-md: 400 16px var(--family-font-3);
+  --body-sm: 400 14px var(--family-font-3);
+  --body-xs: 400 12px var(--family-font-3);
+  /* cores */
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
 
-    --purple: #B259FF;
-    --fuschia: #FF59F9;
-    --pink: #FF598B;
-    --orange: #FF8B59;
-    --yellow: #FFCD59;
-    --lime: #E1FF59;
-    --green: #59FF91;
-    --cyan: #59FFF9;
-    --navy: #6A59FF;
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
 
-    --danger: #FF5959;
+  --danger: #ff5959;
 
-    --input-base: #1C1F21;
-    --input-stroke: #363B40;
-    --input-placeholder: #869198;
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
 
-    --shape-background: #131516;
-    --shape-body: #212427;
-    --shape-button: #2D3136;
-    --shape-hover: #383D42;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
 
-    --text-body: #C8CDD0;
-    --text-heading:#F9F9F9;
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+}
+body{
+    overflow: hidden;
+    font: --body-md;
+    color: var(--text-body);
+    background-color: var(--shape-background);
+    gap: 20px;
 }
