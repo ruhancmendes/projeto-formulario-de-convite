@@ -1,0 +1,76 @@
+input,
+textarea,
+select {
+  background-color: var(--input-base);
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  font: var(--body-md);
+  color: var(--input-placeholder);
+  margin-bottom: 1rem;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0.25rem solid var(--shape-body);
+  border: 0.125rem solid var(--brand-light);
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+.sobre-evento {
+  display: flex;
+  gap: 12px;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 24px;
+
+    & img{
+        width: 24px;
+        height: 24px;
+    }
+}
+label{
+    font: var(--body-sm);
+    color: var(--text-body);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+.flex-1{
+    flex: 1;
+}
+.radio-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(272px));
+    gap: 1rem;
+}
+.radio-option{
+    display: flex;
+    width: 272px;
+    height: 48px;
+    background-color: var(--input-base);
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    gap: 8px ;
+    padding: 4px;
+}
+.radio-inner{
+    border-radius: .5rem;
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover{
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+}

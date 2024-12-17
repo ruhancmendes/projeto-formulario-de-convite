@@ -45,7 +45,7 @@
 }
 body{
     overflow: hidden;
-    font: --body-md;
+    font: var(--body-md);
     color: var(--text-body);
     background-color: var(--shape-background);
     gap: 20px;
