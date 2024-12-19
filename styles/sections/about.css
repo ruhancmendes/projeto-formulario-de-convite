@@ -26,45 +26,62 @@ textarea:focus {
   color: var(--text-heading);
   margin-bottom: 24px;
 
-    & img{
-        width: 24px;
-        height: 24px;
-    }
+  & img {
+    width: 24px;
+    height: 24px;
+  }
 }
-label{
-    font: var(--body-sm);
-    color: var(--text-body);
-    display: block;
-    margin-bottom: 0.5rem;
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.5rem;
 }
-.flex{
-    display: flex;
-    gap: 1rem;
+.flex {
+  display: flex;
+  gap: 1rem;
 }
-.flex-1{
-    flex: 1;
+.flex-1 {
+  flex: 1;
 }
-.radio-wrapper{
+.type-wrapper .radio-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.radio-type {
     display: grid;
-    grid-template-columns: repeat(auto-fit, max(272px));
-    gap: 1rem;
-}
-.radio-option{
-    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     width: 272px;
     height: 48px;
+    gap: 4px;
+    padding: 4px;
     background-color: var(--input-base);
+    align-items: center;
     border-radius: 8px;
     border: 1px solid var(--input-stroke);
-    gap: 8px ;
-    padding: 4px;
+  }
+.img-radio-1 {
+    background-image: url(../../assets/icons/building-1.svg);
+    width: 16px;
+    height: 16px;
+}
+.img-radio-2 {
+    background-image: url(../../assets/icons/video-1.svg);
+    width: 16px;
+    height: 16px;
 }
 .radio-inner{
-    border-radius: .5rem;
-    display: grid;
-    justify-items: center;
-    gap: 8px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 4px;
+    gap: 8px;
+    font: var(--body-sm);
+    color: var(--text-body);
 
     & input,
     & input:focus,
@@ -73,4 +90,29 @@ label{
         position: absolute;
         inset: 0;
     }
+
+    &:hover, &:focus-within{
+        background-color: var(--shape-button);
+        & .img-radio-1{
+            background-image: url(../../assets/icons/building-2.svg);
+        }
+        & .img-radio-2{
+            background-image: url(../../assets/icons/video-2.svg);
+        }
+    }
+
+    &:has(:checked){
+        background-color: var(--shape-button);
+        font: var(--body-sm);
+        color: var(--text-heading);
+        & .img-radio-1{
+            background-image: url(../../assets/icons/building-2.svg);
+        }
+        & .img-radio-2{
+            background-image: url(../../assets/icons/video-2.svg);
+        }
+    }
+}
+.input-radio{
+    width: 272px;
 }
