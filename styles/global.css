@@ -44,7 +44,6 @@
   --text-heading: #f9f9f9;
 }
 body{
-    overflow: hidden;
     font: var(--body-md);
     color: var(--text-body);
     background-color: var(--shape-background);
