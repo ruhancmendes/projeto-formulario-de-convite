@@ -179,3 +179,37 @@ input[type="checkbox"]:checked + .slider::before{
     font: var(--body-sm);
     color: var(--text-heading);
 }
+
+/* input-file */
+
+.file-input{
+    display: flex;
+    width: 119px;
+    height: 40px;
+    padding: 4px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: var(--shape-button);
+    position: relative;
+    align-items: center;
+    
+    & img{
+        width: 16px;
+        height: 16px;
+    }
+    & p{
+        font: var(--body-sm);
+        color: var(--text-heading);
+    }
+}
+input[type="file"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.flex-2{
+    flex: 2;
+}

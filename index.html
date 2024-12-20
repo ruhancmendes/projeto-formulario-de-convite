@@ -251,13 +251,23 @@
                   </div>
                 </div>
               </div>
-              <div class="switchtoggle">
-                <label for="switchtoggle">Estilo</label>
-                <div class="botao">
-                  <div class="switch">
-                    <input type="checkbox" id="toggle-dark-mode" />
-                    <label for="toggle-dark-mode" class="slider"></label>
-                    <span id="mode-text">Escuro</span>
+              <div class="flex">
+                <div class="switchtoggle flex-1">
+                  <label for="switchtoggle">Estilo</label>
+                  <div class="botao">
+                    <div class="switch">
+                      <input type="checkbox" id="toggle-dark-mode" />
+                      <label for="toggle-dark-mode" class="slider"></label>
+                      <span id="mode-text">Escuro</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fileinput flex-2">
+                  <label>Foto de capa</label>
+                  <div class="file-input">
+                    <input type="file" id="cover" name="foto-de-capa" class="custom-file-input">
+                    <img src="assets/icons/upload.svg" alt="ícone upload">
+                    <p class="costum-file">Selecionar</p>
                   </div>
                 </div>
               </div>
