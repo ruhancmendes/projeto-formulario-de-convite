@@ -1,4 +1,6 @@
 @import url(sections/about.css);
+@import url(sections/theme.css);
+
 fieldset{
     border: none;
     display: grid;

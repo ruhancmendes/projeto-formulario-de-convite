@@ -1,0 +1,130 @@
+.personalizaçao {
+  display: flex;
+  gap: 12px;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 24px;
+  margin-top: 48px;
+
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+}
+/* cor principal */
+.main-color {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 12px;
+    width: 560px;
+    height: 40px;
+    margin-bottom: 28px;
+}
+.color{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--shape-button);
+
+    & input, & input:focus, & input:hover{
+        all: unset;
+        position: absolute;
+        inset: 0;
+    } 
+
+    &:hover, &:focus-within{
+        background-color: var(--shape-hover);
+    }
+
+    &:has(:checked){
+        background-color: var(--shape-hover);
+        border: 2px solid var(--brand-light);
+    }
+}
+.circle{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.brand-light{
+    background-color: var(--brand-light);
+}
+.navy{
+    background-color: var(--navy);
+}
+.purple{
+    background-color: var(--purple);
+}
+.fuschia{
+    background-color: var(--fuschia);
+}
+.pink{
+    background-color: var(--pink);
+}
+.danger{
+    background-color: var(--danger);
+}
+.orange{
+    background-color: var(--orange);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+.lime{
+    background-color: var(--lime);
+}
+.green{
+    background-color: var(--green);
+}
+.cyan{
+    background-color: var(--cyan);
+}
+
+/* tema do evento */
+
+.theme-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 8px;
+    width: 560px;
+    margin-bottom: 28px;
+}
+.theme-selection{
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    padding: 4px 4px 8px 4px;
+    position: relative;
+
+    & input, & input:focus, & input:hover{
+        all: unset;
+        position: absolute;
+        inset: 0;
+    } 
+
+    &:hover, &:focus-within{
+        background-color: var(--shape-hover);
+    }
+
+    &:has(:checked){
+        background-color: var(--shape-button);
+        border: 2px solid var(--brand-light);
+
+        & span{
+        font: var(--body-sm);
+        color: var(--text-heading);
+    }
+    }
+}
+span{
+    font: var(--body-sm);
+    color: var(--text-body);
+}
