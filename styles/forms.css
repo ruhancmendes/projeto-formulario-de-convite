@@ -1,5 +1,7 @@
 @import url(sections/about.css);
 @import url(sections/theme.css);
+@import url(sections/contact.css);
+@import url(sections/footer.css);
 
 fieldset{
     border: none;

@@ -8,3 +8,5 @@
         modeText.textContent = 'Escuro';
       }
     });
+
+    

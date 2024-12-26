@@ -97,6 +97,7 @@
                   cols="30"
                   rows="5"
                   placeholder="Escreva sobre os detalhes do evento"
+                  required
                 ></textarea>
               </div>
             </fieldset>
@@ -265,13 +266,88 @@
                 <div class="fileinput flex-2">
                   <label>Foto de capa</label>
                   <div class="file-input">
-                    <input type="file" id="cover" name="foto-de-capa" class="custom-file-input">
-                    <img src="assets/icons/upload.svg" alt="ícone upload">
+                    <input
+                      type="file"
+                      id="cover"
+                      name="foto-de-capa"
+                      class="custom-file-input"
+                    />
+                    <img src="assets/icons/upload.svg" alt="ícone upload" />
                     <p class="costum-file">Selecionar</p>
                   </div>
                 </div>
               </div>
             </fieldset>
+            <fieldset class="contact-data">
+              <div class="dados">
+                <img src="assets/icons/contact.svg" alt="ícone de contato" />
+                <p>Dados para contato</p>
+              </div>
+              <div class="contact">
+                <label>Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome completo"
+                  required
+                />
+              </div>
+              <div class="data flex">
+                <div class="email flex-1">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
+                </div>
+                <div class="telephone flex-1">
+                  <label for="telephone">Telefone</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    minlength="11"
+                    maxlength="11"
+                    placeholder="31988887777"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <footer>
+              <div class="termo">
+                <div class="checagem"></div>
+                <input type="checkbox" name="terms" />
+                <label for="termos"
+                  >Li e concordo com os
+                  <span class="termos">Termos e condições</span> e com a
+                  <span class="termos">Política de Privacidade</span></label
+                >
+              </div>
+              <div class="mail">
+                <div class="checagem"></div>
+                <input type="checkbox" name="mail" />
+                <label for="mail"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
+              </div>
+              <div class="sms">
+                <div class="checagem"></div>
+                <input type="checkbox" name="sms" />
+                <label for="sms"
+                  >Aceito receber atualizações e promoções por SMS</label
+                >
+              </div>
+              <div class="button">
+                <button class="submit">
+                  <img src="assets/icons/convite.svg" alt="ícone de convite" class="submit-img">
+                  Gerar convite
+                </button>
+              </div>
+            </footer>
           </form>
         </div>
       </main>

@@ -1,0 +1,63 @@
+footer {
+  border-top: 1px solid var(--input-stroke);
+  padding: 40px 0 0 0;
+}
+.termo,
+.mail,
+.sms {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checagem{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/icons/checkmark-1.svg);
+  }
+
+  &:hover,
+  &:focus-within{
+    .checagem {
+        background-image: url(../../assets/icons/checkmark-3.svg);
+    }
+  }
+
+  &:has(:checked){
+    .checagem {
+        background-image: url(../../assets/icons/checkmark-2.svg);
+    }
+  }
+}
+.termos{
+    font: 600 14px var(--family-font-3);
+    color: var(--brand-light);
+    text-decoration: underline;
+}
+
+button{
+    all: unset;
+    font: 600 16px var(--family-font-3);
+    color: var(--text-heading);
+    width: 177px;
+    height: 48px;
+    gap: 12px;
+    padding: 4px 20px;
+    border-radius: 8px;
+    background-color: var(--brand-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button{
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-end;
+}

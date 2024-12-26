@@ -1,6 +1,7 @@
 #invite {
   display: grid;
   grid-template-columns: 40% 60%;
+  height: 100vh;
 }
 aside {
   width: 400px;
