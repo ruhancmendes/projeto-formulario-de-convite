@@ -1,7 +1,7 @@
-@import url(/styles/sections/about.css);
-@import url(/styles/sections/theme.css);
-@import url(/styles/sections/contact.css);
-@import url(/styles/sections/footer.css);
+@import url(styles/sections/about.css);
+@import url(styles/sections/theme.css);
+@import url(styles/sections/contact.css);
+@import url(styles/sections/footer.css);
 
 fieldset{
     border: none;
